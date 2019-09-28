@@ -12,9 +12,6 @@ namespace Employee
 {
     public partial class Form1 : Form
     {
-        public string employeeName;
-        public int employeeNumber;
-
         public Form1()
         {
             InitializeComponent();
