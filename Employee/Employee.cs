@@ -8,5 +8,7 @@ namespace Employee
 {
     class Employee
     {
+        public string EmployeeName;
+        public int EmployeeNumber;
     }
 }
