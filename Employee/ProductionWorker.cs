@@ -6,11 +6,9 @@ using System.Threading.Tasks;
 
 namespace Employee
 {
-    //Base class
-    class Employee
+    class ProductionWorker : Employee
     {
-        //Data Members
-        public string EmployeeName;
-        public int EmployeeNumber;
+        public int ShiftNumber;
+        public int HourlyPayRate;
     }
 }
