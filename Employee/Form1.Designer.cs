@@ -35,7 +35,8 @@
             this.ShiftLabel = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.PayRateLabel = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.PayRateTextBox = new System.Windows.Forms.TextBox();
+            this.EnterButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // NameLabel
@@ -49,7 +50,7 @@
             // 
             // EmployeeNameTextBox
             // 
-            this.EmployeeNameTextBox.Location = new System.Drawing.Point(249, 36);
+            this.EmployeeNameTextBox.Location = new System.Drawing.Point(312, 36);
             this.EmployeeNameTextBox.Name = "EmployeeNameTextBox";
             this.EmployeeNameTextBox.Size = new System.Drawing.Size(100, 20);
             this.EmployeeNameTextBox.TabIndex = 1;
@@ -65,7 +66,7 @@
             // 
             // EmployeeNumberTextBox
             // 
-            this.EmployeeNumberTextBox.Location = new System.Drawing.Point(249, 72);
+            this.EmployeeNumberTextBox.Location = new System.Drawing.Point(312, 73);
             this.EmployeeNumberTextBox.Name = "EmployeeNumberTextBox";
             this.EmployeeNumberTextBox.Size = new System.Drawing.Size(100, 20);
             this.EmployeeNumberTextBox.TabIndex = 3;
@@ -75,17 +76,17 @@
             this.ShiftLabel.AutoSize = true;
             this.ShiftLabel.Location = new System.Drawing.Point(146, 121);
             this.ShiftLabel.Name = "ShiftLabel";
-            this.ShiftLabel.Size = new System.Drawing.Size(80, 13);
+            this.ShiftLabel.Size = new System.Drawing.Size(160, 13);
             this.ShiftLabel.TabIndex = 4;
-            this.ShiftLabel.Text = "Employee Shift:";
+            this.ShiftLabel.Text = "Employee Shift(Day=1, Night=2):";
             // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
-            "Day Shift - 1",
-            "Night Shift - 2"});
-            this.comboBox1.Location = new System.Drawing.Point(249, 113);
+            "1",
+            "2"});
+            this.comboBox1.Location = new System.Drawing.Point(312, 118);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 5;
@@ -99,19 +100,30 @@
             this.PayRateLabel.TabIndex = 6;
             this.PayRateLabel.Text = "Hourly Pay Rate:";
             // 
-            // textBox1
+            // PayRateTextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(249, 152);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 7;
+            this.PayRateTextBox.Location = new System.Drawing.Point(312, 153);
+            this.PayRateTextBox.Name = "PayRateTextBox";
+            this.PayRateTextBox.Size = new System.Drawing.Size(100, 20);
+            this.PayRateTextBox.TabIndex = 7;
+            // 
+            // EnterButton
+            // 
+            this.EnterButton.Location = new System.Drawing.Point(249, 220);
+            this.EnterButton.Name = "EnterButton";
+            this.EnterButton.Size = new System.Drawing.Size(75, 23);
+            this.EnterButton.TabIndex = 8;
+            this.EnterButton.Text = "Enter";
+            this.EnterButton.UseVisualStyleBackColor = true;
+            this.EnterButton.Click += new System.EventHandler(this.EnterButton_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.EnterButton);
+            this.Controls.Add(this.PayRateTextBox);
             this.Controls.Add(this.PayRateLabel);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.ShiftLabel);
@@ -135,7 +147,8 @@
         private System.Windows.Forms.Label ShiftLabel;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label PayRateLabel;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox PayRateTextBox;
+        private System.Windows.Forms.Button EnterButton;
     }
 }
 

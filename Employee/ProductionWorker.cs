@@ -9,6 +9,6 @@ namespace Employee
     class ProductionWorker : Employee
     {
         public int ShiftNumber;
-        public int HourlyPayRate;
+        public double HourlyPayRate;
     }
 }
